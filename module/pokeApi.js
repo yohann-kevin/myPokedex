@@ -20,6 +20,7 @@ export function fetchPokemon() {
             pokemon.appendChild(pDiv);
             pDiv.appendChild(pName);
             pDiv.appendChild(pImg);
+            console.log(arrayPoke)
             return arrayPoke
         });
     }
