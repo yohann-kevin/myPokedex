@@ -20,8 +20,27 @@ export function fetchPokemon() {
             pokemon.appendChild(pDiv);
             pDiv.appendChild(pName);
             pDiv.appendChild(pImg);
-            console.log(arrayPoke)
-            return arrayPoke
+            // console.log(arrayPoke)
+            // return arrayPoke
+        });
+    }
+}
+
+export function fetchPoke() {
+    for (let i = 1; i < 10; i++) {
+        fetch("https://pokeapi.co/api/v2/pokemon/" + i).then(function (response) {
+            return response.json()
+        }).then(function (json) {
+            let arrayPoke = [];
+            let pokeName = [];
+            let pokeIndice = [];
+            let pokeVersion = [];
+            pokeName.push(json.name);
+            pokeIndice.push(json.game_indices[0].version.name);
+            arrayPoke.push(json);
+            console.log(arrayPoke);
+            console.log(pokeName);
+            console.log(pokeIndice);
         });
     }
 }
