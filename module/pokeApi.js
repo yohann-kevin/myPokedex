@@ -2,7 +2,7 @@ const pokemon = document.getElementById('pokemon');
 const imgPoke = document.getElementById('imgPoke');
 
 export function fetchPokemon() {
-    for (let i = 1; i < 50; i++) {
+    for (let i = 1; i < 10; i++) {
         fetch("https://pokeapi.co/api/v2/pokemon/" + i).then(function (response) {
             return response.json()
         }).then(function (json) {
