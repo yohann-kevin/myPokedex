@@ -1,6 +1,11 @@
+// api pokemon
 import {fetchPokemon} from '../module/pokeApi.js'
+import {fetchPoke} from '../module/pokeApi.js'
+// test
 import {action} from '../module/test.js'
 import {action2} from '../module/test.js'
+
 fetchPokemon();
+fetchPoke();
 action();
 action2();
