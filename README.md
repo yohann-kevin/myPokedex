@@ -4,7 +4,7 @@
 
 Little pokedex with PokeApi
 
-# snyk : 
+### snyk : 
 
 ![Known Vulnerabilities](https://snyk.io/test/github/yohann-kevin/myPokedex/badge.svg)
 
