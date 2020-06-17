@@ -1,3 +1,8 @@
+// import 'test.js';
+var test = import("./test.js");
+// test.action();
+
+
 const pokemon = document.getElementById('pokemon');
 const imgPoke = document.getElementById('imgPoke');
 
@@ -42,7 +47,7 @@ for (let i = 1; i < 50; i++) {
 // }
 
 // JavaScript code 
-function myFunction() {
+function search() {
     let input = document.getElementById('input').value;
     let name = document.getElementsByClassName('pokeName');
     let tabTest = [];
