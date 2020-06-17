@@ -4,6 +4,10 @@
 
 Little pokedex with PokeApi
 
+# snyk : 
+
+[![Known Vulnerabilities](https://snyk.io/test/github/{yohann-kevin}/{myPokedex}/badge.svg)](https://snyk.io/test/github/{yohann-kevin}/{myPokedex})
+
 ## running 
 
 1)
