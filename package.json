@@ -1,0 +1,23 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "little pokedex",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yohann-kevin/myPokedex.git"
+  },
+  "author": "perriguey yohann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yohann-kevin/myPokedex/issues"
+  },
+  "homepage": "https://github.com/yohann-kevin/myPokedex#readme",
+  "dependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
