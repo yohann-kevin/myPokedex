@@ -78,8 +78,24 @@ img {
 
 /* test */
 
+#listColor {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .testColor {
-    width: 50%;
+    width: 10%;
+    text-align: center;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .acier {
