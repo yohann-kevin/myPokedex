@@ -3,8 +3,6 @@ import {colors} from './assets/colors.js'
 const pokemon = document.getElementById('pokemon');
 const imgPoke = document.getElementById('imgPoke');
 
-console.log(colors.red);
-
 let pokeId = [];
 let pokeName = [];
 let pokeType = [];
@@ -77,6 +75,11 @@ export function fetchPoke() {
             // console.log('HP : ' + pokeHp + " ATTACK : " + pokeAtck + " Defense : " + pokeDef + " attack spe : " + pokeAtckSpe + " Defense spe : " + pokeDefSpe + " speed : " + pokeSpeed);
         });
     }
+}
+
+export function testColors() {
+    let li = document.getElementById('liTest');
+    li.style.backgroundColor = colors.psy
 }
 
 //function push for factorisation

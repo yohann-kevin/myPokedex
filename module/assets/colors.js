@@ -1,4 +1,27 @@
 export var colors = {
+    acier: '#50889c',
+    dragon: '#036dc4',
+    electrik: '#f3d239',
+    feu: '#ff9e54',
+    insecte: '#6c8537',
+    plante: '#62bc59',
+    psy: '#ff737c',
+    sol: '#d87943',
+    tenebre: '#5d5668',
+    combat: '#d43f6c',
+    eau: '#5297df',
+    fee: '#da87d3',
+    glace: '#74cfc1',
+    normal: '#929ba3',
+    poison: '#ab6bc9',
+    roche: '#c4b78c',
+    spectre: '#526bb3',
+    vol: '#94afe4',
+    inconnu: '#689a8d',
+    obscur: '#434349',
+
     red: '#ef5350',
-    blue: 'blue'
+    bg1: '#2b292c',
+    bg2: '#2f2f2f',
+    bg3: '#263238'
 }
