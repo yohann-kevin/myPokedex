@@ -1,4 +1,4 @@
 export var colors = {
-    red: 'red',
+    red: '#ef5350',
     blue: 'blue'
 }
