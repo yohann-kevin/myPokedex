@@ -1,6 +1,23 @@
 const pokemon = document.getElementById('pokemon');
 const imgPoke = document.getElementById('imgPoke');
 
+let pokeId = [];
+let pokeName = [];
+let pokeType = [];
+let pokeWeight = [];
+let PokeHeight = [];
+
+let pokeAbilitiesOne = [];
+let pokeAbilititesTwo = [];
+let pokeExpBased = [];
+
+let pokeHp = [];
+let pokeAtck = [];
+let pokeDef = [];
+let pokeAtckSpe = [];
+let pokeDefSpe = [];
+let pokeSpeed = [];
+
 export function fetchPokemon() {
     for (let i = 1; i < 15; i++) {
         fetch("https://pokeapi.co/api/v2/pokemon/" + i).then(function (response) {
@@ -31,23 +48,6 @@ export function fetchPoke() {
         fetch("https://pokeapi.co/api/v2/pokemon/" + i).then(function (response) {
             return response.json()
         }).then(function (json) {
-            let pokeId = [];
-            let pokeName = [];
-            let pokeType = [];
-            let pokeWeight = [];
-            let PokeHeight = [];
-
-            let pokeAbilitiesOne = [];
-            let pokeAbilititesTwo = [];
-            let pokeExpBased = [];
-            
-            let pokeHp = [];
-            let pokeAtck = [];
-            let pokeDef = [];
-            let pokeAtckSpe = [];
-            let pokeDefSpe = [];
-            let pokeSpeed = [];
-
             get(pokeId,json.id);
             get(pokeName,json.name);
             get(pokeType,json.types[0].type.name);
@@ -64,10 +64,10 @@ export function fetchPoke() {
             get(pokeDefSpe,json.stats[4].base_stat);
             get(pokeSpeed,json.stats[5].base_stat);
 
-            console.log(pokeId + "-" + pokeName + "-" + pokeType + "-" + pokeWeight + "-" + PokeHeight);
-            console.log('abilities : ' + pokeAbilitiesOne + "-" + pokeAbilititesTwo);
-            console.log('based exp : ' + pokeExpBased);
-            console.log('HP : ' + pokeHp + " ATTACK : " + pokeAtck + " Defense : " + pokeDef + " attack spe : " + pokeAtckSpe + " Defense spe : " + pokeDefSpe + " speed : " + pokeSpeed);
+            // console.log(pokeId + "-" + pokeName + "-" + pokeType + "-" + pokeWeight + "-" + PokeHeight);
+            // console.log('abilities : ' + pokeAbilitiesOne + "-" + pokeAbilititesTwo);
+            // console.log('based exp : ' + pokeExpBased);
+            // console.log('HP : ' + pokeHp + " ATTACK : " + pokeAtck + " Defense : " + pokeDef + " attack spe : " + pokeAtckSpe + " Defense spe : " + pokeDefSpe + " speed : " + pokeSpeed);
         });
     }
 }
