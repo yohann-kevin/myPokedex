@@ -1,5 +1,9 @@
+import {colors} from './assets/colors.js'
+
 const pokemon = document.getElementById('pokemon');
 const imgPoke = document.getElementById('imgPoke');
+
+console.log(colors.red);
 
 let pokeId = [];
 let pokeName = [];
