@@ -24,27 +24,29 @@ export function fetchPokemon() {
             return response.json()
         }).then(function (json) {
             let arrayPoke = [];
-            let pDiv = document.createElement('div');
-            pDiv.classList.add('poke');
+            let div = document.createElement('div');
+            div.classList.add('poke');
+
             let pName = document.createElement('a');
             pName.classList.add('pokeName');
             pName.textContent = json.name;
             // pName.href = "https://pokeapi.co/api/v2/pokemon/" + i
             pName.href = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + i + ".png"
+
             let pImg = document.createElement('img');
-            pImg.src = json.sprites.front_shiny;
+            pImg.srcset = "https://pokeres.bastionbot.org/images/pokemon/"+ i +".png";
+
             arrayPoke.push(json)
-            pokemon.appendChild(pDiv);
-            pDiv.appendChild(pImg);
-            pDiv.appendChild(pName);
-            // console.log(arrayPoke)
-            // return arrayPoke
+            pokemon.appendChild(div);
+            div.appendChild(pImg);
+            div.appendChild(pName);
+
         });
     }
 }
 
 export function fetchPoke() {
-    for (let i = 1; i < 2; i++) {
+    for (let i = 1; i < 1; i++) {
         fetch("https://pokeapi.co/api/v2/pokemon/" + i).then(function (response) {
             return response.json()
         }).then(function (json) {
