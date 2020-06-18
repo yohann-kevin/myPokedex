@@ -2,7 +2,7 @@ const pokemon = document.getElementById('pokemon');
 const imgPoke = document.getElementById('imgPoke');
 
 export function fetchPokemon() {
-    for (let i = 1; i < 10; i++) {
+    for (let i = 1; i < 15; i++) {
         fetch("https://pokeapi.co/api/v2/pokemon/" + i).then(function (response) {
             return response.json()
         }).then(function (json) {
@@ -18,8 +18,8 @@ export function fetchPokemon() {
             pImg.src = json.sprites.front_shiny;
             arrayPoke.push(json)
             pokemon.appendChild(pDiv);
-            pDiv.appendChild(pName);
             pDiv.appendChild(pImg);
+            pDiv.appendChild(pName);
             // console.log(arrayPoke)
             // return arrayPoke
         });
@@ -27,20 +27,52 @@ export function fetchPokemon() {
 }
 
 export function fetchPoke() {
-    for (let i = 1; i < 10; i++) {
+    for (let i = 1; i < 2; i++) {
         fetch("https://pokeapi.co/api/v2/pokemon/" + i).then(function (response) {
             return response.json()
         }).then(function (json) {
-            let arrayPoke = [];
+            let pokeId = [];
             let pokeName = [];
-            let pokeIndice = [];
-            let pokeVersion = [];
-            pokeName.push(json.name);
-            pokeIndice.push(json.game_indices[0].version.name);
-            arrayPoke.push(json);
-            console.log(arrayPoke);
-            console.log(pokeName);
-            console.log(pokeIndice);
+            let pokeType = [];
+            let pokeWeight = [];
+            let PokeHeight = [];
+
+            let pokeAbilitiesOne = [];
+            let pokeAbilititesTwo = [];
+            let pokeExpBased = [];
+            
+            let pokeHp = [];
+            let pokeAtck = [];
+            let pokeDef = [];
+            let pokeAtckSpe = [];
+            let pokeDefSpe = [];
+            let pokeSpeed = [];
+
+            get(pokeId,json.id);
+            get(pokeName,json.name);
+            get(pokeType,json.types[0].type.name);
+            get(pokeWeight,json.weight);
+            get(PokeHeight,json.height);
+            get(pokeAbilitiesOne,json.abilities[0].ability.name);
+            get(pokeAbilititesTwo,json.abilities[1].ability.name);
+            get(pokeExpBased,json.base_experience);
+
+            get(pokeHp,json.stats[0].base_stat);
+            get(pokeAtck,json.stats[1].base_stat);
+            get(pokeDef,json.stats[2].base_stat);
+            get(pokeAtckSpe,json.stats[3].base_stat);
+            get(pokeDefSpe,json.stats[4].base_stat);
+            get(pokeSpeed,json.stats[5].base_stat);
+
+            console.log(pokeId + "-" + pokeName + "-" + pokeType + "-" + pokeWeight + "-" + PokeHeight);
+            console.log('abilities : ' + pokeAbilitiesOne + "-" + pokeAbilititesTwo);
+            console.log('based exp : ' + pokeExpBased);
+            console.log('HP : ' + pokeHp + " ATTACK : " + pokeAtck + " Defense : " + pokeDef + " attack spe : " + pokeAtckSpe + " Defense spe : " + pokeDefSpe + " speed : " + pokeSpeed);
         });
     }
+}
+
+//function push for factorisation
+function get(tab,value) {
+    tab.push(value);
 }
