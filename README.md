@@ -4,9 +4,13 @@
 
 Little pokedex with PokeApi
 
-# snyk : 
+### snyk : 
 
-[![Known Vulnerabilities](https://snyk.io/test/github/{yohann-kevin}/{myPokedex}/badge.svg)](https://snyk.io/test/github/{yohann-kevin}/{myPokedex})
+![Known Vulnerabilities](https://snyk.io/test/github/yohann-kevin/myPokedex/badge.svg)
+
+### codeclimate : 
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/676dfbc7463b932e5689/maintainability)](https://codeclimate.com/github/yohann-kevin/myPokedex/maintainability)
 
 ## running 
 
