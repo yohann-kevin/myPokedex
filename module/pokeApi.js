@@ -79,7 +79,7 @@ export function fetchPoke() {
 
 export function testColors() {
     let li = document.getElementById('liTest');
-    li.style.backgroundColor = colors.psy
+    li.style.backgroundColor = colors.poison
 }
 
 //function push for factorisation
