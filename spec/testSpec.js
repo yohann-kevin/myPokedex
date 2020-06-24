@@ -1,4 +1,4 @@
-const { ConsoleReporter } = require('jasmine');
+// const { ConsoleReporter } = require('jasmine');
 
 describe('action', () => {
     var action = require('../module/test.js');
