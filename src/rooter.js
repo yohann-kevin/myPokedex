@@ -2,7 +2,7 @@
 import {fetchPokemon} from '../module/pokeApi.js'
 import {fetchPoke} from '../module/pokeApi.js'
 // test colors
-import {testColors} from '../module/pokeApi.js'
+import {testColors} from '../module/badges.js'
 // test search
 import {search} from '../module/search.js'
 // test
