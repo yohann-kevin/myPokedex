@@ -1,8 +1,8 @@
 import {colors} from './assets/colors.js'
-import {typePoke} from '../module/pokeApi.js'
+// import {typePoke} from '../module/pokeApi.js'
 
-var pokeType = typePoke();
-console.log(pokeType);
+// var pokeType = typePoke();
+// console.log(pokeType);
 
 // const Data = fetchPoke();
 
