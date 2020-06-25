@@ -10,6 +10,7 @@ import {search} from '../module/search.js'
 // import {action2} from '../module/test.js'
 // test discord bot
 // test netlify bot
+// test netlify bot 2
 
 fetchPokemon();
 fetchPoke();
