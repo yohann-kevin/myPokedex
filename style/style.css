@@ -25,6 +25,24 @@
 
 }
 
+@font-face {
+    font-family: 'pokemon_hollowNormal';
+    src: url('../fonts/pokemon/pokemon_hollow-webfont.woff2') format('woff2'),
+         url('../fonts/pokemon/pokemon_hollow-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pokemon_solidNormal';
+    src: url('../fonts/pokemon/pokemon_solid-webfont.woff2') format('woff2'),
+         url('../fonts/pokemon/pokemon_solid-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
     margin: 0 auto;
     padding: 0;
@@ -51,10 +69,12 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    font-family: 'pokemon_hollowNormal';
+    font-size: 20px;
 }
 
 #title {
-    padding: 20px;
+    padding: 2px;
     width: 30%;
     color: white;
 }
@@ -243,4 +263,5 @@ img {
     color: white;
     padding: 15px;
     text-align: center;
+    font-family: 'pokemon_solidNormal';
 }
