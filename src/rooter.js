@@ -8,6 +8,7 @@ import {search} from '../module/search.js'
 // test
 // import {action} from '../module/test.js'
 // import {action2} from '../module/test.js'
+// test discord bot
 
 fetchPokemon();
 fetchPoke();
