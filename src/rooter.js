@@ -11,6 +11,7 @@ import {search} from '../module/search.js'
 // test discord bot
 // test netlify bot
 // test netlify bot 2
+// test netlify bot 3
 
 fetchPokemon();
 fetchPoke();
