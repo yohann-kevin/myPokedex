@@ -8,12 +8,6 @@ import {search} from '../module/search.js'
 // test
 // import {action} from '../module/test.js'
 // import {action2} from '../module/test.js'
-// test discord bot
-// test netlify bot
-// test netlify bot 2
-// test netlify bot 3
-// test netlify bot 4
-// test netlify bot 5
 
 fetchPokemon();
 fetchPoke();
