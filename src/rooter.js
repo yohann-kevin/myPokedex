@@ -13,6 +13,7 @@ import {search} from '../module/search.js'
 // test netlify bot 2
 // test netlify bot 3
 // test netlify bot 4
+// test netlify bot 5
 
 fetchPokemon();
 fetchPoke();
