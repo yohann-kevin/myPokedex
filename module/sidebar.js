@@ -1,21 +1,28 @@
 // test sidebar
 
+let sidenav = document.getElementById("sidenav");
+let main = document.getElementById("main");
+let header = document.getElementById("header");
+let footer = document.getElementById("footer");
+
+let btnOpen = document.getElementById('openNav');
+let btnClose = document.getElementById('closeBtn');
+
 export function openNav() {
-    let btnOpen = document.getElementById('openNav');
     btnOpen.addEventListener("click", event => {
-        document.getElementById("sidenav").style.width = "250px";
-        document.getElementById("main").style.marginRight = "250px";
-        document.getElementById("header").style.marginRight = "250px";
-        document.getElementById("footer").style.marginRight = "250px";
+        sideBar(sidenav,main,header,footer,"250px");
     })
 }
 
 export function closeNav() {
-    let btnClose = document.getElementById('closeBtn');
     btnClose.addEventListener("click", event => {
-        document.getElementById("sidenav").style.width = "0";
-        document.getElementById("main").style.marginRight = "0";
-        document.getElementById("header").style.marginRight = "0";
-        document.getElementById("footer").style.marginRight = "0";
+        sideBar(sidenav,main,header,footer,"0");
     })
+}
+
+function sideBar(elmnt1,elmnt2,elmnt3,elmnt4,value) {
+    elmnt1.style.width = value;
+    elmnt2.style.marginRight = value;
+    elmnt3.style.marginRight = value;
+    elmnt4.style.marginRight = value;
 }
