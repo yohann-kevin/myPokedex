@@ -45,6 +45,10 @@ export function fetchPokemon() {
             pokemon.appendChild(div);
             div.appendChild(pImg);
             div.appendChild(pName);
+
+            div.style.backgroundColor = 'red';
+            div.style.borderRadius = '15px';
+            div.style.margin = "5px";
         });
     }
 }
