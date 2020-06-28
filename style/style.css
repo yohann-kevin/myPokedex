@@ -54,12 +54,13 @@ body {
 }
 
 #header {
-    width: 100%;
+    /* width: 100%; */
     background-color: #ef5350;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 15px;
+    /* margin-right: 250px; */
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
 }
@@ -163,7 +164,9 @@ img {
     margin-left: 50px;
 }
 
-#main {
+#main,
+#header,
+#footer {
     transition: margin-right .5s;
     -webkit-transition: margin-right .5s;
     -moz-transition: margin-right .5s;
@@ -194,6 +197,20 @@ img {
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
+}
+
+/* -------------- TEST VIEWS SYSTEM ------------- */
+
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 100%;
 }
 
 /* ------------------ TEST COLOR ---------------- */
