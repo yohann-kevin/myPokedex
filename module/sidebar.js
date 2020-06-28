@@ -9,13 +9,13 @@ let btnOpen = document.getElementById('openNav');
 let btnClose = document.getElementById('closeBtn');
 
 export function openNav() {
-    btnOpen.addEventListener("click", event => {
+    btnOpen.addEventListener("click", function() {
         sideBar(sidenav,main,header,footer,"250px");
     })
 }
 
 export function closeNav() {
-    btnClose.addEventListener("click", event => {
+    btnClose.addEventListener("click", function() {
         sideBar(sidenav,main,header,footer,"0");
     })
 }

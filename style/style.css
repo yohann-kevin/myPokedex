@@ -91,7 +91,6 @@ body {
 
 #pokeSection {
     width: 70%;
-    min-height: 60vh;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -211,6 +210,10 @@ img {
     padding: 14px 16px;
     font-size: 17px;
     width: 100%;
+}
+
+.tabcontent {
+    min-height: 80vh;
 }
 
 /* ------------------ TEST COLOR ---------------- */

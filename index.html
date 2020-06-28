@@ -28,15 +28,16 @@
 
     <div id="sidenav" class="sidenav">
         <a href="javascript:void(0)" id="closeBtn" class="closebtn">&times;</a>
-        <a class="tablink" onclick="openPage('Home', this, 'red')"  id="defaultOpen">Home</a>
-        <a class="tablink" onclick="openPage('News', this, 'green')">News</button>
-        <a class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</a>
-        <a class="tablink" onclick="openPage('About', this, 'orange')">About</a>
+        <a class="tablink" id="home">Home</a>
+        <a class="tablink" id="testPokemon">Pokemon</a>
+        <a class="tablink" id="testBadge">Badge</a>
+        <a class="tablink" id="about">About</a>
+        <a class="tablink" id="contact">Contact</a>
     </div>
 
     <div id="main">
 
-        <section id="pokeSection">
+        <section id="pokeSection" class="tabcontent">
             <figure id="pokeFig">
                 <ul id="ul">
                     <li id="pokemon"></li>
@@ -44,7 +45,7 @@
             </figure>
         </section>
 
-        <section id="testColor">
+        <section id="testColor" class="tabcontent">
             <h2 style="text-align:center;color:white;">test color</h2>
             <ul id="listColor">
                 <li class="testColor acier">Acier</li>
