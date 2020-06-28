@@ -21,48 +21,61 @@
             </div>
             <div id="searchbar">
                 <input type="text" id="input" name="txt" placeholder="rechercher">
+                <button id="openNav">Open sidebar</button>
             </div>
         </div>
     </header>
 
-    <section id="pokeSection">
-        <figure id="pokeFig">
-            <ul id="ul">
-                <li id="pokemon"></li>
-            </ul>
-        </figure>
-    </section>
+    <div id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" id="closeBtn" class="closebtn">&times;</a>
+        <a class="tablink" onclick="openPage('Home', this, 'red')"  id="defaultOpen">Home</a>
+        <a class="tablink" onclick="openPage('News', this, 'green')">News</button>
+        <a class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</a>
+        <a class="tablink" onclick="openPage('About', this, 'orange')">About</a>
+    </div>
 
-    <section>
-        <h2 style="text-align:center;color:white;">test color</h2>
-        <ul id="listColor">
-            <li class="testColor acier">Acier</li>
-            <li class="testColor dragon">Dragon</li>
-            <li class="testColor electrik">Elecrik</li>
-            <li class="testColor feu">Feu</li>
-            <li class="testColor insecte">Insecte</li>
-            <li class="testColor plante">Plante</li>
-            <li class="testColor psy">Psy</li>
-            <li class="testColor sol">Sol</li>
-            <li class="testColor tenebre">Ténèbre</li>
-            <li class="testColor combat">Combat</li>
-            <li class="testColor eau">Eau</li>
-            <li class="testColor fee">Fée</li>
-            <li class="testColor glace">Glace</li>
-            <li class="testColor normal">Normal</li>
-            <li class="testColor poison">Poison</li>
-            <li class="testColor roche">Roche</li>
-            <li class="testColor spectre">Spectre</li>
-            <li class="testColor vol">Vol</li>
-            <li class="testColor inconnu">Inconnu</li>
-            <li class="testColor obscur light">Obscur</li>
-            <li class="testColor red light">Red</li>
-            <li class="testColor bg1 light">Background 1</li>
-            <li class="testColor bg2 light">Background 2</li>
-            <li class="testColor bg3 light">Background 3</li>
-            <li class="testColor" id="liTest">Encore un test :)</li>
-        </ul>
-    </section>
+    <div id="main">
+
+        <section id="pokeSection">
+            <figure id="pokeFig">
+                <ul id="ul">
+                    <li id="pokemon"></li>
+                </ul>
+            </figure>
+        </section>
+
+        <section id="testColor">
+            <h2 style="text-align:center;color:white;">test color</h2>
+            <ul id="listColor">
+                <li class="testColor acier">Acier</li>
+                <li class="testColor dragon">Dragon</li>
+                <li class="testColor electrik">Elecrik</li>
+                <li class="testColor feu">Feu</li>
+                <li class="testColor insecte">Insecte</li>
+                <li class="testColor plante">Plante</li>
+                <li class="testColor psy">Psy</li>
+                <li class="testColor sol">Sol</li>
+                <li class="testColor tenebre">Ténèbre</li>
+                <li class="testColor combat">Combat</li>
+                <li class="testColor eau">Eau</li>
+                <li class="testColor fee">Fée</li>
+                <li class="testColor glace">Glace</li>
+                <li class="testColor normal">Normal</li>
+                <li class="testColor poison">Poison</li>
+                <li class="testColor roche">Roche</li>
+                <li class="testColor spectre">Spectre</li>
+                <li class="testColor vol">Vol</li>
+                <li class="testColor inconnu">Inconnu</li>
+                <li class="testColor obscur light">Obscur</li>
+                <li class="testColor red light">Red</li>
+                <li class="testColor bg1 light">Background 1</li>
+                <li class="testColor bg2 light">Background 2</li>
+                <li class="testColor bg3 light">Background 3</li>
+                <li class="testColor" id="liTest">Encore un test :)</li>
+            </ul>
+        </section>
+
+    </div>
 
     <footer id="footer">
         <div id="kirua">
