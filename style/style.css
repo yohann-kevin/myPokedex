@@ -123,6 +123,11 @@ body {
     background-color: white;
     margin: 7px 0;
     transition: 0.4s;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 #pokeSection {
