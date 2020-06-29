@@ -34,7 +34,7 @@ export function fetchPokemon() {
             let pName = document.createElement('a');
             pName.classList.add('pokeName');
             pName.textContent = json.name;
-            pName.style.color = colors.red;
+            pName.style.color = 'white';
             // pName.href = "https://pokeapi.co/api/v2/pokemon/" + i
             pName.href = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + i + ".png"
 
@@ -46,9 +46,9 @@ export function fetchPokemon() {
             div.appendChild(pImg);
             div.appendChild(pName);
 
-            div.style.backgroundColor = 'red';
+            div.style.backgroundColor = colors.red;
             div.style.borderRadius = '15px';
-            div.style.margin = "5px";
+            div.style.marginBottom = "40px";
         });
     }
 }

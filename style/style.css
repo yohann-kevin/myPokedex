@@ -54,15 +54,13 @@ body {
 }
 
 #header {
-    /* width: 100%; */
     background-color: #ef5350;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 15px;
-    /* margin-right: 250px; */
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 #homeTitle {
@@ -82,11 +80,49 @@ body {
 
 #searchbar {
     padding: 20px;
-    width: 10%;
+    width: 30%;
 }
 
 #searchbar input {
-    width: 90%;
+    outline: none;
+    width: 50%;
+    height: 20px;
+    border: 2px solid transparent;
+    transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    -moz-transition: width 0.4s ease-in-out;
+    -ms-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#searchbar input:focus {
+    width: 70%;
+}
+
+#openNav {
+    position: fixed;
+    right: 0;
+    width: 10%;
+    padding: 15px;
+}
+
+#openNav:hover {
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 7px;
+    background-color: white;
+    margin: 7px 0;
+    transition: 0.4s;
 }
 
 #pokeSection {
@@ -116,14 +152,15 @@ img {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 25px;
 }
 
 .poke {
-    width: 30%;
+    width: 25%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 15px;
 }
 
 
@@ -136,7 +173,7 @@ img {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: #263238;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -158,9 +195,8 @@ img {
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 70px;
     font-size: 36px;
-    margin-left: 50px;
 }
 
 #main,
@@ -183,29 +219,18 @@ img {
     }
 }
 
-.container {
-    display: inline-block;
-    cursor: pointer;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
 /* -------------- TEST VIEWS SYSTEM ------------- */
 
+#link {
+    width: 100%;
+    margin-top: 15px;
+    background-color: #ef5350;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
 .tablink {
-    background-color: #555;
     color: white;
-    float: left;
-    border: none;
-    outline: none;
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
@@ -334,10 +359,6 @@ img {
     background-color: #263238;
 }
 
-
-
-
-
 .light {
     color: white;
 }
@@ -346,8 +367,8 @@ img {
 
 #footer {
     background-color: #ef5350;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 #kirua {
