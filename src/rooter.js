@@ -9,7 +9,7 @@ import {search} from '../module/search.js'
 import {openNav} from '../module/sidebar.js'
 import {closeNav} from '../module/sidebar.js'
 // test views system
-import {views} from '../module/views.js'
+import {views} from '../module/views.js' 
 
 // test
 // import {action} from '../module/test.js'
