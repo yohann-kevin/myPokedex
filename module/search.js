@@ -2,7 +2,7 @@
 export function search() {
     
     let test = document.getElementById('input');
-    test.addEventListener("keyup", event => {
+    test.addEventListener("keyup", function() {
         let input = document.getElementById('input').value;
         let name = document.getElementsByClassName('pokeName');
         let tabTest = [];

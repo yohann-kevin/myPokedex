@@ -3,7 +3,10 @@
 ## Description 
 
 Little pokedex with PokeApi
-![Known Vulnerabilities](https://snyk.io/test/github/yohann-kevin/myPokedex/badge.svg)[![Maintainability](https://api.codeclimate.com/v1/badges/676dfbc7463b932e5689/maintainability)](https://codeclimate.com/github/yohann-kevin/myPokedex/maintainability)[![Codacy Badge](https://app.codacy.com/project/badge/Grade/537089a651384dbf9e792f621c2f5146)](https://www.codacy.com/manual/yohann-kevin/myPokedex?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yohann-kevin/myPokedex&amp;utm_campaign=Badge_Grade)[![GitHub issues](https://img.shields.io/github/issues/yohann-kevin/myPokedex?style=plastic)](https://github.com/yohann-kevin/myPokedex/issues)![GitHub watchers](https://img.shields.io/github/watchers/yohann-kevin/myPokedex?color=blue&label=watchers&logoColor=black&style=flat-square)[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)![Discord](https://img.shields.io/discord/725695228048179221?color=blue&label=chat&logo=chat&logoColor=blue&style=plastic)
+
+
+![Known Vulnerabilities](https://snyk.io/test/github/yohann-kevin/myPokedex/badge.svg)[![Maintainability](https://api.codeclimate.com/v1/badges/676dfbc7463b932e5689/maintainability)](https://codeclimate.com/github/yohann-kevin/myPokedex/maintainability)[![Codacy Badge](https://app.codacy.com/project/badge/Grade/537089a651384dbf9e792f621c2f5146)](https://www.codacy.com/manual/yohann-kevin/myPokedex?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=yohann-kevin/myPokedex&amp;utm_campaign=Badge_Grade)[![GitHub issues](https://img.shields.io/github/issues/yohann-kevin/myPokedex?style=plastic)](https://github.com/yohann-kevin/myPokedex/issues)![GitHub watchers](https://img.shields.io/github/watchers/yohann-kevin/myPokedex?color=blue&label=watchers&logoColor=black&style=flat-square)[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
+
 
 ## running 
 
