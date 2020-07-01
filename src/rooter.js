@@ -8,6 +8,9 @@ import {search} from '../module/search.js'
 // test sidebar
 import {openNav} from '../module/sidebar.js'
 import {closeNav} from '../module/sidebar.js'
+// test menu smartphone
+import {openNavSmartphone} from '../module/navSmartphone.js'
+import {closeNavSmartphone} from '../module/navSmartphone.js'
 // test views system
 import {views} from '../module/views.js' 
 
@@ -21,6 +24,8 @@ search();
 testColors();
 openNav();
 closeNav();
+openNavSmartphone();
+closeNavSmartphone();
 views();
 
 // action();
