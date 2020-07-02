@@ -35,7 +35,7 @@ return tab
 }
 
 export function newTest() {
-  console.log(tab);
+  // console.log(tab);
 }
 
 // export function getPokemon() {

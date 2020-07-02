@@ -1,6 +1,7 @@
 import {colors} from './assets/colors.js'
 import {getPokemon} from './assets/pokemon.js'
 import {newTest} from './assets/pokemon.js'
+import {backgroundColor} from './assets/backgroundColor.js'
 
 export function test() {
     getPokemon();
@@ -13,7 +14,7 @@ const pokemon = document.getElementById('pokemon');
 var pokeTab = [];
 
 export function fetchPokemon() {
-    for (let i = 1; i < 15; i++) {
+    for (let i = 1; i < 20; i++) {
         fetch("https://pokeapi.co/api/v2/pokemon/" + i).then(function (response) {
             return response.json()
         }).then(function (json) {
@@ -35,8 +36,9 @@ export function fetchPokemon() {
             pokemon.appendChild(div);
             div.appendChild(pImg);
             div.appendChild(pName);
-
-            div.style.backgroundColor = colors.red;
+            console.log(json.types[0].type.name);
+            // div.style.backgroundColor = colors.red;
+            div.style.backgroundColor = backgroundColor(json.types[0].type.name);
             div.style.borderRadius = '15px';
             div.style.marginBottom = "40px";
         });
