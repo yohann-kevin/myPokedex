@@ -1,4 +1,4 @@
-import {colors} from './assets/colors.js'
+// import {colors} from './assets/colors.js'
 import {getPokemon} from './assets/pokemon.js'
 import {newTest} from './assets/pokemon.js'
 import {backgroundColor} from './assets/backgroundColor.js'
@@ -12,8 +12,6 @@ export function test() {
 const pokemon = document.getElementById('pokemon');
 const pageSingle = document.getElementById('id01');
 const singleDiv = document.getElementById('container');
-
-var pokeTab = [];
 
 export function fetchPokemon() {
     for (let i = 1; i < 20; i++) {
@@ -59,17 +57,3 @@ export function fetchPokemon() {
         });
     }
 }
-
-export function fetchPoke() {
-
-}
-
-// export function typePoke() {
-//     // console.log(pokeName)
-//     return pokeType
-// }
-
-// export var poke = {
-//     id: pokeId,
-//     name: pokeName
-// }
