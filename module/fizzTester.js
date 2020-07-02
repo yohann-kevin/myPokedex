@@ -1,19 +1,8 @@
 // test spec with fizzBuzz
 
 function fizzBuzz(min, max) {
-    var tab = [ ];
-    for (let i = min ; i < max; i++) {
-        if (i % 3 == 0 && i % 5 == 0) {
-            tab.push ('FizzBuzz');
-        }else if (i % 3 == 0) {
-            tab.push ('Fizz');
-        }else if (i % 5 == 0) {
-            tab.push ('Buzz');
-        }else {
-            tab.push(i);
-        }
-    }
-    return tab;
+    var tab = [];
+    for (let i = min; i < max; i++) i % 3 == 0 && i % 5 == 0 ? tab.push("FizzBuzz") : i % 3 == 0 ? tab.push("Fizz") : i % 5 == 0 ? tab.push("Buzz") : tab.push(i);
+    return tab
 }
-module.exports = fizzBuzz;
-fizzBuzz(9,16)
+module.exports = fizzBuzz, fizzBuzz(9, 16);
