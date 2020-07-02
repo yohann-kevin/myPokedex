@@ -1,5 +1,5 @@
 <div align="center">
-    # Pokedex
+# Pokedex
 </div>
 
 
