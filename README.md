@@ -1,7 +1,4 @@
-<div align="center">
 # Pokedex
-</div>
-
 
 ## Description 
 
