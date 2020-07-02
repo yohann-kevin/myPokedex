@@ -10,7 +10,7 @@
 // let pokeAbilitiesOne = [];
 // let pokeAbilitiesTwo = [];
 // let pokeExpBased = [];
-// let tab = [];
+let tab = [];
 // let pokeHp = [];
 // let pokeAtck = [];
 // let pokeDef = [];
