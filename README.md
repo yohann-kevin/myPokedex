@@ -1,4 +1,7 @@
-# Pokedex
+<div align="center">
+    # Pokedex
+</div>
+
 
 ## Description 
 
@@ -10,21 +13,24 @@ Little pokedex with PokeApi
 
 ## running 
 
-1)
+1) To start clone download or clone the project :
+
 ```
 
 git clone
 
 ```
 
-2)
+2) then install all dependencies with the command :
+
 ```
 
 npm install
 
 ```
 
-3)
+3) and finally start the project 😁 :
+
 ```
 
 npm run start
