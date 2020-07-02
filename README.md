@@ -13,7 +13,7 @@ Little pokedex with PokeApi
 
 ## running 
 
-1) To start clone download or clone the project :
+1) To start download or clone the project :
 
 ```
 
