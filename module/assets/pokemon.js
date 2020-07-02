@@ -1,23 +1,23 @@
-let allPokemon = [];
-let pokeTab = [];
+// let allPokemon = [];
+// let pokeTab = [];
 
-let pokeId = [];
-let pokeName = [];
-let pokeType = [];
-let pokeWeight = [];
-let pokeHeight = [];
+// let pokeId = [];
+// let pokeName = [];
+// let pokeType = [];
+// let pokeWeight = [];
+// let pokeHeight = [];
 
-let pokeAbilitiesOne = [];
-let pokeAbilitiesTwo = [];
-let pokeExpBased = [];
-let tab = [];
-let pokeHp = [];
-let pokeAtck = [];
-let pokeDef = [];
-let pokeAtckSpe = [];
-let pokeDefSpe = [];
-let pokeSpeed = [];
-let arrayPoke = [];
+// let pokeAbilitiesOne = [];
+// let pokeAbilitiesTwo = [];
+// let pokeExpBased = [];
+// let tab = [];
+// let pokeHp = [];
+// let pokeAtck = [];
+// let pokeDef = [];
+// let pokeAtckSpe = [];
+// let pokeDefSpe = [];
+// let pokeSpeed = [];
+// let arrayPoke = [];
 
 export function getPokemon() {
   for (let i = 1; i < 10; i++) {

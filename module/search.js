@@ -12,14 +12,12 @@ export function search() {
 
 
         input = input.toLowerCase();
-        console.log(tabTest)
         let x = document.getElementsByTagName('li');
 
         for (let i = 0; i < x.length; i++) {
             if (!x[i].innerHTML.toLowerCase().includes(input)) {
                 x[i].style.display = "none";
             }
-            console.log('test');
             // if (!x[i].innerHTML.toLowerCase().includes(input)) {
             //     x[i].style.display = "none";
             // } else {

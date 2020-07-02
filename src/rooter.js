@@ -1,6 +1,5 @@
 // api pokemon
 import {fetchPokemon} from '../module/pokeApi.js'
-import {fetchPoke} from '../module/pokeApi.js'
 // test colors
 import {testColors} from '../module/badges.js'
 // test search
@@ -21,7 +20,6 @@ import {test} from '../module/pokeApi.js'
 // import {action2} from '../module/test.js'
 
 fetchPokemon();
-fetchPoke();
 search();
 testColors();
 openNav();
