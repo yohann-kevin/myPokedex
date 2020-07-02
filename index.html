@@ -19,9 +19,9 @@
             <div id="title">
                 <h1>POKÉMON</h1>
             </div>
+            <button onclick="document.getElementById('id01').style.display='block'">Test</button>
             <div id="searchbar">
                 <input type="text" id="input" name="txt" placeholder="rechercher">
-                <!-- <button id="openNav">Open sidebar</button> -->
             </div>
             <div id="openNav">
                 <div class="bar1"></div>
@@ -55,6 +55,14 @@
             <a class="tablink" id="testBadge">Badge</a>
             <a class="tablink" id="about">About</a>
             <a class="tablink" id="contact">Contact</a>
+        </div>
+    </section>
+
+    <section id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+        <div class="modal-content animate" id='container'>
+            <!-- <div class="container"></div> -->
         </div>
     </section>
 
@@ -108,6 +116,16 @@
     </footer>
 
     <script src="src/main.js"></script>
+    <!-- test modal -->
+    <script>
+        var modal = document.getElementById('id01');
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
