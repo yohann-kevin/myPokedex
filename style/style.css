@@ -569,4 +569,8 @@ img {
         top: 60px;
         right: 80px;
     }
+
+    .testColor {
+        width: 40%;
+    }
 }
