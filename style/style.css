@@ -639,6 +639,7 @@ img {
     }
     
     .imgSinglePokemon {
+        margin-top: -160px;
         padding-top: 55px;
         padding-bottom: 10px;
         width: 100%;
@@ -650,7 +651,7 @@ img {
 }
     
     .namePokemon {
-        margin-top: -80px;
+        /* margin-top: -80px; */
         width: 100%;
         color: white;
         text-align: center;
