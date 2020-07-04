@@ -309,24 +309,38 @@ img {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-content {
-    background-color: #fefefe;
+/* .modal-content {
+    background-color: #263238;
     width: 100%;
     height: 100%;
-}
+} */
 
 .close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: #000;
+    width: 30%;
     font-size: 35px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-    color: red;
+.returnPokemon {
+    position: absolute;
+    left: 0px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btnReturnPokemon {
+    margin-top: 12px;
+    width: 45%;
+}
+
+.returnPokemon:hover,
+.returnPokemon:focus {
+    color: #efefef;
     cursor: pointer;
 }
 
@@ -353,6 +367,40 @@ img {
     to {
         transform: scale(1)
     }
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    background-color: #263238;
+}
+
+.container {
+    width: 80%;
+    /* height: 50px; */
+    max-height: 20px;
+    margin: 0;
+}
+
+.imgSinglePokemon {
+    margin-top: -100px;
+    width: 40%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.namePokemon {
+    margin-top: -150px;
+    width: 40%;
+    color: white;
+    text-align: center;
 }
 
 /* @media screen and (max-width: 300px) {
@@ -572,5 +620,39 @@ img {
 
     .testColor {
         width: 40%;
+    }
+
+    #container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+        background-color: #263238;
+    }
+    
+    .container {
+        width: 100%;
+        max-height: 20px;
+        margin: 0;
+    }
+    
+    .imgSinglePokemon {
+        padding-top: 55px;
+        padding-bottom: 10px;
+        width: 100%;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+    
+    .namePokemon {
+        margin-top: -80px;
+        width: 100%;
+        color: white;
+        text-align: center;
     }
 }
