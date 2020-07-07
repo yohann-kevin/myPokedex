@@ -20,8 +20,10 @@ export function fetchPokemon() {
         fetch("https://pokeapi.co/api/v2/pokemon/" + i).then(function (response) {
             return response.json()
         }).then(function (json) {
+            let arrayPoke = [];
             let div = document.createElement('div');
             div.classList.add('poke');
+            arrayPoke.push(json.id,json.name,json.types[0].type.name,json.weight,json.height,);
 
             let pName = document.createElement('a');
             pName.classList.add('pokeName');
@@ -41,7 +43,7 @@ export function fetchPokemon() {
 
             div.onmouseover = div.style.cursor = 'pointer';
             div.addEventListener("click", function () {
-                singlePokemon(pageSingle,singleDiv,i,json.name,json.types[0].type.name);
+                singlePokemon(pageSingle,singleDiv,i,json.name,json.types[0].type.name,arrayPoke);
                 closePoke(singleDiv);
             })
         });
