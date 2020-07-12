@@ -43,7 +43,7 @@ export function fetchPokemon() {
 
             div.onmouseover = div.style.cursor = 'pointer';
             div.addEventListener("click", function () {
-                singlePokemon(pageSingle,singleDiv,i,json.name,json.types[0].type.name,arrayPoke);
+                singlePokemon(pageSingle,singleDiv,json.name,arrayPoke);
                 closePoke(singleDiv);
             })
         });
