@@ -309,12 +309,6 @@ img {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* .modal-content {
-    background-color: #263238;
-    width: 100%;
-    height: 100%;
-} */
-
 .close {
     width: 30%;
     font-size: 35px;
@@ -404,17 +398,6 @@ img {
     text-align: center;
 }
 
-/* @media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-
-    .cancelbtn {
-        width: 100%;
-    }
-} */
-
 /* ------------------ TEST COLOR ---------------- */
 
 #listColor {
@@ -435,106 +418,6 @@ img {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-}
-
-.acier {
-    background-color: #50889c;
-}
-
-.dragon {
-    background-color: #036dc4;
-}
-
-.electrik {
-    background-color: #f3d239;
-}
-
-.feu {
-    background-color: #ff9e54;
-}
-
-.insecte {
-    background-color: #6c8537;
-}
-
-.plante {
-    background-color: #62bc59;
-}
-
-.psy {
-    background-color: #ff737c;
-}
-
-.sol {
-    background-color: #d87943;
-}
-
-.tenebre {
-    background-color: #5d5668;
-}
-
-.combat {
-    background-color: #d43f6c;
-}
-
-.eau {
-    background-color: #5297df;
-}
-
-.fee {
-    background-color: #da87d3;
-}
-
-.glace {
-    background-color: #74cfc1;
-}
-
-.normal {
-    background-color: #929ba3;
-}
-
-.poison {
-    background-color: #ab6bc9;
-}
-
-.roche {
-    background-color: #c4b78c;
-}
-
-.spectre {
-    background-color: #526bb3;
-}
-
-.vol {
-    background-color: #94afe4;
-}
-
-.inconnu {
-    background-color: #689a8d;
-}
-
-.obscur {
-    background-color: #434349;
-}
-
-.red {
-    background-color: #ef5350;
-}
-
-.bg1 {
-    background-color: #2b292c;
-}
-
-.bg2 {
-    background-color: #2f2f2f;
-}
-
-.bg3 {
-    background-color: #263238;
-}
-
-.light {
-    color: white;
 }
 
 /* fin test */
@@ -653,7 +536,6 @@ img {
 }
     
     .namePokemon {
-        /* margin-top: -80px; */
         width: 100%;
         color: white;
         text-align: center;
