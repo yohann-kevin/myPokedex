@@ -1,15 +1,7 @@
-// import {colors} from './assets/colors.js'
-import {getPokemon} from './assets/pokemon.js'
-import {newTest} from './assets/pokemon.js'
 import {backgroundColor} from './assets/backgroundColor.js'
 import {singlePokemon} from './assets/singlePokemon.js'
 import {closePoke} from './assets/closeSinglePoke.js'
 import {pokeName} from './assets/pokeName.js'
-
-export function test() {
-    getPokemon();
-    newTest();
-}
 
 const pokemon = document.getElementById('pokemon');
 const pageSingle = document.getElementById('id01');
