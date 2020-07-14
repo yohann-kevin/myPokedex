@@ -4,12 +4,12 @@ import {newTest} from './assets/pokemon.js'
 import {backgroundColor} from './assets/backgroundColor.js'
 import {singlePokemon} from './assets/singlePokemon.js'
 import {closePoke} from './assets/closeSinglePoke.js'
+import {pokeName} from './assets/pokeName.js'
 
 export function test() {
     getPokemon();
     newTest();
 }
-
 
 const pokemon = document.getElementById('pokemon');
 const pageSingle = document.getElementById('id01');
@@ -26,9 +26,7 @@ export function fetchPokemon() {
             arrayPoke.push(json.id,json.name,json.types[0].type.name,json.weight,json.height,);
 
             let pName = document.createElement('a');
-            pName.classList.add('pokeName');
-            pName.textContent = json.name;
-            pName.style.color = 'white';
+            pokeName(pName,json.name,'white','pokeName');
             let pImg = document.createElement('img');
             pImg.srcset = "https://pokeres.bastionbot.org/images/pokemon/" + i + ".png";
 
@@ -37,7 +35,6 @@ export function fetchPokemon() {
             div.appendChild(pName);
 
             div.style.backgroundColor = backgroundColor(json.types[0].type.name);
-
             div.style.borderRadius = '15px';
             div.style.marginBottom = "40px";
 
