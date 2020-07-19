@@ -12,6 +12,8 @@ import {openNavSmartphone} from '../module/navSmartphone.js'
 import {closeNavSmartphone} from '../module/navSmartphone.js'
 // test views system
 import {views} from '../module/views.js'
+// test exp bar
+import {expBarTest} from '../module/expBarTest.js'
 
 // test
 // import {action} from '../module/test.js'
@@ -25,6 +27,7 @@ closeNav();
 openNavSmartphone();
 closeNavSmartphone();
 views();
+expBarTest();
 
 // action();
 // action2();
