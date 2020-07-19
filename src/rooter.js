@@ -1,7 +1,7 @@
 // api pokemon
 import {fetchPokemon} from '../module/pokeApi.js'
 // test colors
-import {testColors} from '../module/badges.js'
+import {badges} from '../module/badges.js'
 // test search
 import {search} from '../module/search.js'
 // test sidebar
@@ -19,7 +19,7 @@ import {views} from '../module/views.js'
 
 fetchPokemon();
 search();
-testColors();
+badges();
 openNav();
 closeNav();
 openNavSmartphone();
