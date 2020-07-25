@@ -382,7 +382,7 @@ img {
 }
 
 .imgSinglePokemon {
-    margin-top: -100px;
+    /* margin-top: -100px; */
     width: 40%;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -392,7 +392,7 @@ img {
 }
 
 .namePokemon {
-    margin-top: -150px;
+    /* margin-top: -150px; */
     width: 40%;
     color: white;
     text-align: center;

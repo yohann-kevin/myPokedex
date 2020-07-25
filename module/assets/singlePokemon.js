@@ -6,6 +6,7 @@ let newId = document.createElement('h2');
 let pokeWeight = document.createElement('h2');
 let pokeHeight = document.createElement('h2');
 let type = document.createElement('h2');
+let divInfo = document.createElement('div');
 
 export function singlePokemon(page, div, name, data) {
     let newImg = document.createElement('img');
@@ -21,10 +22,12 @@ export function singlePokemon(page, div, name, data) {
     newImg.style.backgroundColor = backgroundColor(type.textContent);
     newImg.classList.add('imgSinglePokemon');
     div.classList.add('divPoke');
+    // newId.classList.add('pokeId');
+    // div.appendChild(newId);
     div.appendChild(newImg);
+    div.appendChild(divInfo);
     div.appendChild(namePokemon);
     div.appendChild(pokeWeight);
     div.appendChild(pokeHeight);
     div.appendChild(type);
-    div.appendChild(newId);
 }
