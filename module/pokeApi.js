@@ -29,7 +29,7 @@ export function fetchPokemon() {
             div.style.backgroundColor = backgroundColor(json.types[0].type.name);
             div.style.borderRadius = '15px';
             div.style.marginBottom = "40px";
-            if (json.types.length === 2) console.log(json.types[1].type.name);
+            // if (json.types.length === 2) console.log(json.types[1].type.name);
             div.onmouseover = div.style.cursor = 'pointer';
             div.addEventListener("click", function () {
                 singlePokemon(pageSingle,singleDiv,json.name,arrayPoke);
