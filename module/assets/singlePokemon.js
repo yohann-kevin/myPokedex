@@ -18,8 +18,15 @@ export function singlePokemon(page, div, name, data) {
     namePokemon.classList.add('namePokemon');
     pokeWeight.textContent = data[3];
     pokeHeight.textContent = data[4];
-    type.textContent = data[2];
-    newImg.style.backgroundColor = backgroundColor(type.textContent);
+    
+    if (typeof data[2] === 'object') {
+        type.textContent = data[2][0] + " " + data[2][1];
+        newImg.style.backgroundColor = backgroundColor(data[2][0]);
+    } else if (typeof data[2] === 'string') {
+        type.textContent = data[2];
+        newImg.style.backgroundColor = backgroundColor(data[2]);
+    }
+
     newImg.classList.add('imgSinglePokemon');
     div.classList.add('divPoke');
     // newId.classList.add('pokeId');

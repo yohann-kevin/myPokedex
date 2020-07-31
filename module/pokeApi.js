@@ -2,6 +2,7 @@ import {backgroundColor} from './assets/backgroundColor.js'
 import {singlePokemon} from './assets/singlePokemon.js'
 import {closePoke} from './assets/closeSinglePoke.js'
 import {pokeName} from './assets/pokeName.js'
+import {verifyType} from './assets/verifyType.js'
 
 const pokemon = document.getElementById('pokemon');
 const pageSingle = document.getElementById('id01');
@@ -15,7 +16,12 @@ export function fetchPokemon() {
             let arrayPoke = [];
             let div = document.createElement('div');
             div.classList.add('poke');
-            arrayPoke.push(json.id,json.name,json.types[0].type.name,json.weight,json.height,);
+            // arrayPoke.push(json.id,json.name,json.types[0].type.name,json.weight,json.height,);
+            if (json.types.length === 2) {
+                arrayPoke.push(json.id,json.name,verifyType(json.types[0].type.name,json.types[1].type.name),json.weight,json.height,);
+            } else {
+                arrayPoke.push(json.id,json.name,json.types[0].type.name,json.weight,json.height,);
+            }
 
             let pName = document.createElement('a');
             pokeName(pName,json.name,'white','pokeName');
