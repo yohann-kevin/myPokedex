@@ -1,3 +1,5 @@
+import {openPage} from './assets/openPage.js'
+
 let btnPokemon = document.getElementById('testPokemon');
 let btnPokemonSmart = document.getElementById('testPokemonSmart');
 
@@ -18,17 +20,25 @@ let contactViews = document.getElementById('contact');
 export function views() {
     if (window.screen.width <= 760) {
         pokemonSmart();
-        btnPokemonSmart.addEventListener("click", pokemonSmart);
-        btnTestBadgeSmart.addEventListener("click", badgeSmart);
-        btnAboutSmart.addEventListener("click", aboutSmart);
-        btnContactSmart.addEventListener("click", contactSmart);
+        pageSmart();
     } else {
         pokemon();
-        btnPokemon.addEventListener("click", pokemon);
-        btnTestBadge.addEventListener("click", badge);
-        btnAbout.addEventListener("click", about);
-        btnContact.addEventListener("click", contact);
+        page();
     }
+}
+
+function page() {
+    btnPokemon.addEventListener("click", pokemon);
+    btnTestBadge.addEventListener("click", badge);
+    btnAbout.addEventListener("click", about);
+    btnContact.addEventListener("click", contact);
+}
+
+function pageSmart() {
+    btnPokemonSmart.addEventListener("click", pokemonSmart);
+    btnTestBadgeSmart.addEventListener("click", badgeSmart);
+    btnAboutSmart.addEventListener("click", aboutSmart);
+    btnContactSmart.addEventListener("click", contactSmart);
 }
 
 function pokemon() {
@@ -61,20 +71,4 @@ function contact() {
 
 function contactSmart() {
     openPage(contactViews, btnContactSmart);
-}
-
-function openPage(pageName, link) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.color = "";
-    }
-
-    pageName.style.display = "block";
-    link.style.color = "white";
 }
