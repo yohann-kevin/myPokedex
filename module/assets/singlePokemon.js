@@ -1,5 +1,7 @@
 import {backgroundColor} from './backgroundColor.js'
 import {pokeId} from './pokeId.js'
+import {weightPoke} from './weightPoke.js'
+import {heightPoke} from './heightPoke.js'
 
 let namePokemon = document.createElement('h1');
 let newId = document.createElement('h2');
@@ -16,8 +18,10 @@ export function singlePokemon(page, div, name, data) {
     page.style.display = 'block';
     namePokemon.textContent = data[1];
     namePokemon.classList.add('namePokemon');
-    pokeWeight.textContent = data[3];
-    pokeHeight.textContent = data[4];
+    // pokeWeight.textContent = data[3];
+    pokeWeight.textContent = weightPoke(data[3]);
+    // pokeHeight.textContent = data[4];
+    pokeHeight.textContent = heightPoke(data[4]);
     
     if (typeof data[2] === 'object') {
         type.textContent = data[2][0] + " " + data[2][1];
