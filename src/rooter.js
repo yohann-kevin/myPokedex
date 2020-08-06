@@ -1,5 +1,7 @@
 // api pokemon
 import {fetchPokemon} from '../module/pokeApi.js'
+// random poke for home
+import {randomPoke} from '../module/randomPoke.js'
 // test colors
 import {badges} from '../module/badges.js'
 // test search
@@ -20,6 +22,7 @@ import {expBarTest} from '../module/expBarTest.js'
 // import {action2} from '../module/test.js'
 
 fetchPokemon();
+randomPoke();
 search();
 badges();
 openNav();
