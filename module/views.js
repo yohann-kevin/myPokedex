@@ -1,5 +1,8 @@
 import {openPage} from './assets/openPage.js'
 
+let btnHome = document.getElementById('btnHome');
+let btnHomeSmart = document.getElementById('homeSmart');
+
 let btnPokemon = document.getElementById('testPokemon');
 let btnPokemonSmart = document.getElementById('testPokemonSmart');
 
@@ -12,6 +15,7 @@ let btnAboutSmart = document.getElementById('aboutSmart');
 let btnContact = document.getElementById('btnContact');
 let btnContactSmart = document.getElementById('contactSmart');
 
+let homeViews = document.getElementById('home');
 let pokemonViews = document.getElementById('pokeSection');
 let testBadgeViews = document.getElementById('testColor');
 let aboutViews = document.getElementById('about');
@@ -28,6 +32,7 @@ export function views() {
 }
 
 function page() {
+    btnHome.addEventListener("click", home);
     btnPokemon.addEventListener("click", pokemon);
     btnTestBadge.addEventListener("click", badge);
     btnAbout.addEventListener("click", about);
@@ -35,10 +40,19 @@ function page() {
 }
 
 function pageSmart() {
+    btnHomeSmart.addEventListener("click", homeSmart);
     btnPokemonSmart.addEventListener("click", pokemonSmart);
     btnTestBadgeSmart.addEventListener("click", badgeSmart);
     btnAboutSmart.addEventListener("click", aboutSmart);
     btnContactSmart.addEventListener("click", contactSmart);
+}
+
+function home() {
+    openPage(homeViews, btnHome);
+}
+
+function homeSmart() {
+    openPage(homeViews, btnHomeSmart);
 }
 
 function pokemon() {
