@@ -27,6 +27,7 @@ export function fetchPokemon() {
             pokeName(pName,json.name,'white','pokeName');
             let pImg = document.createElement('img');
             pImg.srcset = "https://pokeres.bastionbot.org/images/pokemon/" + i + ".png";
+            pImg.alt = json.name;
 
             pokemon.appendChild(div);
             div.appendChild(pImg);
