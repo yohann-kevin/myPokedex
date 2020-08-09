@@ -31,7 +31,7 @@ export function randomPoke() {
             pImg.alt = json.name;
 
             container.appendChild(div);
-            div.appendChild(pImg);  
+            div.appendChild(pImg);
             div.appendChild(pName);
             
             div.style.backgroundColor = backgroundColor(json.types[0].type.name);

@@ -1,3 +1,5 @@
+import {pagination} from './pagination.js'
+// import {registerCounter} from './assets/registerCounter.js'
 import {backgroundColor} from './assets/backgroundColor.js'
 import {singlePokemon} from './assets/singlePokemon.js'
 import {closePoke} from './assets/closeSinglePoke.js'
@@ -7,16 +9,19 @@ import {verifyType} from './assets/verifyType.js'
 const pokemon = document.getElementById('pokemon');
 const pageSingle = document.getElementById('id01');
 const singleDiv = document.getElementById('container');
+let index = 25;
 
 export function fetchPokemon() {
-    for (let i = 1; i < 20; i++) {
+    index = pagination(index);
+    // registerCounter(index);
+    for (let i = (index - 24); i < index; i++) {
         fetch("https://pokeapi.co/api/v2/pokemon/" + i).then(function (response) {
             return response.json()
         }).then(function (json) {
             let arrayPoke = [];
             let div = document.createElement('div');
             div.classList.add('poke');
-            
+
             if (json.types.length === 2) {
                 arrayPoke.push(json.id,json.name,verifyType(json.types[0].type.name,json.types[1].type.name),json.weight,json.height,);
             } else {
