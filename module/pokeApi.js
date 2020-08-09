@@ -16,7 +16,7 @@ export function fetchPokemon() {
             let arrayPoke = [];
             let div = document.createElement('div');
             div.classList.add('poke');
-            // arrayPoke.push(json.id,json.name,json.types[0].type.name,json.weight,json.height,);
+            
             if (json.types.length === 2) {
                 arrayPoke.push(json.id,json.name,verifyType(json.types[0].type.name,json.types[1].type.name),json.weight,json.height,);
             } else {
@@ -36,7 +36,7 @@ export function fetchPokemon() {
             div.style.backgroundColor = backgroundColor(json.types[0].type.name);
             div.style.borderRadius = '15px';
             div.style.marginBottom = "40px";
-            // if (json.types.length === 2) console.log(json.types[1].type.name);
+
             div.onmouseover = div.style.cursor = 'pointer';
             div.addEventListener("click", function () {
                 singlePokemon(pageSingle,singleDiv,json.name,arrayPoke);
