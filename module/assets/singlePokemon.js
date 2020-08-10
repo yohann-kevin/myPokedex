@@ -17,7 +17,7 @@ export function singlePokemon(page, div, name, data) {
     let newImg = document.createElement('img');
     let id = data[0];
     newImg.srcset = "https://pokeres.bastionbot.org/images/pokemon/" + id + ".png";
-    pokeId(id,newId);
+    let finalId = pokeId(id,newId);
     page.style.display = 'block';
     namePokemon.textContent = data[1];
     namePokemon.classList.add('namePokemon');
@@ -27,9 +27,9 @@ export function singlePokemon(page, div, name, data) {
     newImg.classList.add('imgSinglePokemon');
     div.classList.add('divPoke');
     // newId.classList.add('pokeId');
-    // div.appendChild(newId);
     div.appendChild(newImg);
     div.appendChild(divInfo);
+    div.appendChild(finalId);
     div.appendChild(namePokemon);
     div.appendChild(pokeWeight);
     div.appendChild(pokeHeight);
