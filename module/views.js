@@ -32,11 +32,11 @@ export function views() {
 }
 
 function page() {
-    btnHome.addEventListener("click", home);
-    btnPokemon.addEventListener("click", pokemon);
-    btnTestBadge.addEventListener("click", badge);
-    btnAbout.addEventListener("click", about);
-    btnContact.addEventListener("click", contact);
+    event(btnHome, home);
+    event(btnPokemon, pokemon);
+    event(btnTestBadge, badge);
+    event(btnAbout, about);
+    event(btnContact, contact);
 }
 
 function pageSmart() {
@@ -85,4 +85,8 @@ function contact() {
 
 function contactSmart() {
     openPage(contactViews, btnContactSmart);
+}
+
+function event(btn, page) {
+    btn.addEventListener("click", page);
 }
