@@ -1,3 +1,7 @@
 plugins:
     csslint:
       enabled: true
+# ignore files 
+exclude_patterns:
+- "!/module/backgroundColor.js"
+- "/module/colors.js"
