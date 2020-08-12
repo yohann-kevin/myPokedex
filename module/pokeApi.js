@@ -1,5 +1,4 @@
 import {pagination} from './pagination.js'
-// import {registerCounter} from './assets/registerCounter.js'
 import {backgroundColor} from './assets/backgroundColor.js'
 import {singlePokemon} from './assets/singlePokemon.js'
 import {closePoke} from './assets/closeSinglePoke.js'
@@ -13,7 +12,6 @@ let index = 25;
 
 export function fetchPokemon() {
     index = pagination(index);
-    // registerCounter(index);
     for (let i = (index - 24); i < index; i++) {
         fetch("https://pokeapi.co/api/v2/pokemon/" + i).then(function (response) {
             return response.json()
