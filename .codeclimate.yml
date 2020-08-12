@@ -3,5 +3,5 @@
       #enabled: true
 # ignore files 
 exclude_patterns:
-- !module/assets/backgroundColor.js
-- !module/badges.js
+  - module/badges.js
+  - module/assets/backgroundColor.js
