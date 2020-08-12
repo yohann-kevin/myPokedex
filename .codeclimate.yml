@@ -1,7 +1,7 @@
-- plugins:
-    csslint:
-      enabled: true
+#plugins:
+    #csslint:
+      #enabled: true
 # ignore files 
-- exclude_patterns:
+exclude_patterns:
 - !module/assets/backgroundColor.js
 - !module/badges.js
