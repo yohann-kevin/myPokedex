@@ -4,4 +4,4 @@
 # ignore files 
 - exclude_patterns:
 - "!module/assets/backgroundColor.js"
-- "!module/assets/colors.js"
+- "!module/badges.js"
