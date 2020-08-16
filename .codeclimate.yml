@@ -1,6 +1,6 @@
-#plugins:
-    #csslint:
-      #enabled: true
+plugins:
+    csslint:
+      enabled: true
 # ignore files 
 exclude_patterns:
   - module/badges.js
