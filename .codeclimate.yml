@@ -5,3 +5,8 @@ plugins:
 exclude_patterns:
   - module/badges.js
   - module/assets/backgroundColor.js
+  - module/sidebar.js
+  - module/fizzTester.js
+  - module/assets/singlePokemon.js
+  - module/pokeApi.js
+  - module/randomPoke.js
