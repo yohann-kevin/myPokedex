@@ -33,3 +33,6 @@ npm install
 npm run start
 
 ```
+
+
+otherwise you can see the project on : [Pokédex](https://hopeful-liskov-437d37.netlify.app/)
