@@ -1,4 +1,5 @@
 import {openPage} from './assets/openPage.js'
+import {loader} from './assets/loader.js'
 
 let btnHome = document.getElementById('btnHome');
 let btnHomeSmart = document.getElementById('homeSmart');
@@ -23,7 +24,7 @@ let pokemonViews = document.getElementById('pokeSection');
 let testBadgeViews = document.getElementById('testColor');
 let aboutViews = document.getElementById('about');
 let contactViews = document.getElementById('contact');
-let loaderTest = document.getElementById('loader');
+let loaderTest = document.getElementById('pageLoader');
 
 export function views() {
     if (window.screen.width <= 760) {
@@ -41,7 +42,7 @@ function page() {
     event(btnTestBadge, badge);
     event(btnAbout, about);
     event(btnContact, contact);
-    event(btnLoader, loader);
+    event(btnLoader, loaderPage);
 }
 
 function pageSmart() {
@@ -93,11 +94,13 @@ function contactSmart() {
     openPage(contactViews, btnContactSmart);
 }
 
-function loader() {
+function loaderPage() {
+    loader();
     openPage(loaderTest, btnLoader);
 }
 
 function loaderSmart() {
+    loader();
     openPage(loaderTest, btnLoaderSmart);
 }
 
