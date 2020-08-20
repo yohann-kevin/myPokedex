@@ -15,11 +15,15 @@ let btnAboutSmart = document.getElementById('aboutSmart');
 let btnContact = document.getElementById('btnContact');
 let btnContactSmart = document.getElementById('contactSmart');
 
+let btnLoader = document.getElementById('loaderTest');
+let btnLoaderSmart = document.getElementById('loaderSmart')
+
 let homeViews = document.getElementById('home');
 let pokemonViews = document.getElementById('pokeSection');
 let testBadgeViews = document.getElementById('testColor');
 let aboutViews = document.getElementById('about');
 let contactViews = document.getElementById('contact');
+let loaderTest = document.getElementById('loader');
 
 export function views() {
     if (window.screen.width <= 760) {
@@ -37,6 +41,7 @@ function page() {
     event(btnTestBadge, badge);
     event(btnAbout, about);
     event(btnContact, contact);
+    event(btnLoader, loader);
 }
 
 function pageSmart() {
@@ -45,6 +50,7 @@ function pageSmart() {
     btnTestBadgeSmart.addEventListener("click", badgeSmart);
     btnAboutSmart.addEventListener("click", aboutSmart);
     btnContactSmart.addEventListener("click", contactSmart);
+    btnLoaderSmart.addEventListener("click", loaderSmart);
 }
 
 function home() {
@@ -85,6 +91,14 @@ function contact() {
 
 function contactSmart() {
     openPage(contactViews, btnContactSmart);
+}
+
+function loader() {
+    openPage(loaderTest, btnLoader);
+}
+
+function loaderSmart() {
+    openPage(loaderTest, btnLoaderSmart);
 }
 
 function event(btn, page) {
