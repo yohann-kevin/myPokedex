@@ -19,6 +19,7 @@ export function fetchPokemon() {
             let arrayPoke = [];
             let div = document.createElement('div');
             div.classList.add('poke');
+            div.classList.add('animate-bottom');
 
             if (json.types.length === 2) {
                 arrayPoke.push(json.id,json.name,verifyType(json.types[0].type.name,json.types[1].type.name),json.weight,json.height,);
