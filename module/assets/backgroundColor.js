@@ -35,5 +35,7 @@ export function backgroundColor(pokemon) {
     return colors.obscur;
   } else if (pokemon === 'steel') {
     return colors.acier;
+  } else if (pokemon === 'flying') {
+    return colors.vol;
   }
 }
