@@ -20,7 +20,7 @@ export function fetchPokemon() {
             let div = document.createElement('div');
             div.classList.add('poke');
             div.classList.add('animate-bottom');
-
+            testFacto(json);
             if (json.types.length === 2) {
                 arrayPoke.push(json.id,json.name,verifyType(json.types[0].type.name,json.types[1].type.name),json.weight,json.height,);
             } else {
@@ -30,8 +30,7 @@ export function fetchPokemon() {
             let pName = document.createElement('a');
             pokeName(pName,json.name,'white','pokeName');
             let pImg = document.createElement('img');
-            pImg.srcset = "https://pokeres.bastionbot.org/images/pokemon/" + i + ".png";
-            pImg.alt = json.name;
+            pokeImage(pImg,i,json.name);
 
             pokemon.appendChild(div);
             div.appendChild(pImg);
@@ -48,4 +47,14 @@ export function fetchPokemon() {
             })
         });
     }
+}
+
+function pokeImage(image,i,name) {
+    image.src = "https://pokeres.bastionbot.org/images/pokemon/" + i + ".png";
+    image.alt = name;
+    return image;
+}
+
+function testFacto(data) {
+    console.log(data.id);
 }
