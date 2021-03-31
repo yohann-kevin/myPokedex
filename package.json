@@ -22,7 +22,7 @@
   "homepage": "https://github.com/yohann-kevin/myPokedex#readme",
   "dependencies": {
     "lite-server": "^2.5.4", 
-    "snyk": "^1.465.0"
+    "snyk": "^1.518.0"
   },
   "snyk": true,
   "devDependencies": {
